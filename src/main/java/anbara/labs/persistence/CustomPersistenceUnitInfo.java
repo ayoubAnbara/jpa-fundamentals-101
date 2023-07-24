@@ -1,4 +1,4 @@
-package anbara.labs;
+package anbara.labs.persistence;
 
 import com.zaxxer.hikari.HikariDataSource;
 import jakarta.persistence.SharedCacheMode;
@@ -64,7 +64,7 @@ public class CustomPersistenceUnitInfo implements PersistenceUnitInfo {
 
     @Override
     public List<String> getManagedClassNames() {
-        return List.of("anbara.labs.entities.Product");
+        return List.of("anbara.labs.entities.Product","anbara.labs.entities.Employee");
     }
 
     @Override
